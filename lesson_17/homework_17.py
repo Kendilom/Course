@@ -3,7 +3,7 @@ from functools import wraps
 
 
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    format='%(asctime)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     filename='text.log',
     filemode='w'
@@ -89,7 +89,6 @@ class EvenIterator:
 
 
 if __name__ == "__main__":
-    '''             Логування виконувалось на всіх функціях                 '''
     gen_even_number(20) #перший генератор
 
     gen_even_number(-10) #перевірка декоратору пошуку помилок
